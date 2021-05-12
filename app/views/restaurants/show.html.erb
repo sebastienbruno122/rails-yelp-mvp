@@ -1,0 +1,15 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <h1><%= @restaurant.name %></h1>
+
+      <ul>
+        <li>Name: <strong><%= @restaurant.name %></strong></li>
+        <li>Address: <strong><%= @restaurant.address %></strong></li>
+        <li>Phone_number: <strong><%= @restaurant.phone_number %></strong></li>
+        <li>Category: <strong><%= @restaurant.category %></strong></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<%= link_to "Add a new review",new_restaurant_review_path(@restaurant) %>
